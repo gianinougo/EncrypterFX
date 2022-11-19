@@ -57,7 +57,7 @@ public class Encrypter {
         return count;
     }
 
-    /*public Callable<Boolean> checkSignature(Path pathName){
+    public Callable<Boolean> checkSignature(Path pathName){
         return () -> {
             try (Stream<String> stream= Files.lines(pathName);
                  Stream<String> stream2= Files.lines(pathName);) {
@@ -65,13 +65,12 @@ public class Encrypter {
                         map(line-> moveChar(line, -key)).mapToLong(line-> {
                             return countLetters(line);
                         }).sum();
-                long sig2 = stream2.filter(line-> line.startsWith("Signature:")).mapToInt(line->Integer.parseInt(line.substring()));
+                long sig2 = stream2.filter(line-> line.startsWith("Signature:")).mapToInt(line->Integer.parseInt("9", 9)).sum();
                 return sig1==sig2;
             } catch (IOException e){
                 e.printStackTrace();
             }
             return false;
         };
-    }*/
-
+    }
 }
