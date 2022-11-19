@@ -5,6 +5,13 @@ public class FileData {
     public String fileName;
     public String imagePath;
 
+    private long totalTime;
+
+    public FileData(String fileName, String imagePath, long totalTime) {
+        this.fileName = fileName;
+        this.imagePath = imagePath;
+        this.totalTime = totalTime;
+    }
 
     public String getFileName() {
         return fileName;
@@ -22,6 +29,13 @@ public class FileData {
         this.imagePath = imagePath;
     }
 
+    public long getTotalTime() {
+        return totalTime;
+    }
+
+    public void setTotalTime(long totalTime) {
+        this.totalTime = totalTime;
+    }
 
     @Override
     public String toString() {

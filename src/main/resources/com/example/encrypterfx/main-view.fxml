@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.encrypterfx.MainController">
+   <children>
+      <Button fx:id="btnSign" layoutX="364.0" layoutY="180.0" mnemonicParsing="false" onAction="#signFile" text="Sign Files" />
+      <Button fx:id="btnCheck" layoutX="345.0" layoutY="260.0" mnemonicParsing="false" text="Check Signature" />
+      <ListView layoutX="52.0" layoutY="109.0" prefHeight="287.0" prefWidth="200.0" />
+      <Label layoutX="194.0" layoutY="42.0" prefHeight="40.0" prefWidth="211.0" text="Directory Signer" textAlignment="CENTER">
+         <font>
+            <Font size="28.0" />
+         </font></Label>
+      <Label layoutX="97.0" layoutY="423.0" prefHeight="18.0" prefWidth="109.0" text="Label" />
+   </children>
+</AnchorPane>
