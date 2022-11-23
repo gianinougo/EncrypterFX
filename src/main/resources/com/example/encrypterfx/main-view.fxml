@@ -9,11 +9,12 @@
    <children>
       <Button fx:id="btnSign" layoutX="364.0" layoutY="180.0" mnemonicParsing="false" onAction="#signFile" text="Sign Files" />
       <Button fx:id="btnCheck" layoutX="345.0" layoutY="260.0" mnemonicParsing="false" text="Check Signature" />
-      <ListView layoutX="52.0" layoutY="109.0" prefHeight="287.0" prefWidth="200.0" />
+      <ListView fx:id="listFiles" layoutX="52.0" layoutY="109.0" prefHeight="287.0" prefWidth="200.0" />
       <Label layoutX="194.0" layoutY="42.0" prefHeight="40.0" prefWidth="211.0" text="Directory Signer" textAlignment="CENTER">
          <font>
             <Font size="28.0" />
          </font></Label>
-      <Label layoutX="97.0" layoutY="423.0" prefHeight="18.0" prefWidth="109.0" text="Label" />
+      <Label fx:id="lblStatus" layoutX="97.0" layoutY="423.0" prefHeight="18.0" prefWidth="109.0" />
+      <Label fx:id="lblResult" layoutX="351.0" layoutY="132.0" prefHeight="18.0" prefWidth="109.0" />
    </children>
 </AnchorPane>

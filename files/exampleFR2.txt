@@ -1,0 +1,43 @@
+supprimer..
+permet de supprimer le ou les éléments sélectionnés après une demande de confirmation
+supprimer
+permet de supprimer le ou les éléments sélectionnés sans demande de confirmation préalable
+métrique
+dans les champs de saisie, vous pouvez entrer des valeurs dans différentes unités de mesure
+le centimètre est défini par défaut
+saisissez, par exemple, 1 "pour un écart de 1 pouce
+null
+d'autres unités sont utilisables selon le contexte, par exemple, 12 pt pour un écart de 12 points
+si la valeur prend des proportions irréalistes avec la nouvelle unité, le programme détermine une valeur minimale ou maximale
+fermer
+ferme la boîte de dialogue en appliquant les modifications effectuées
+fermer
+ferme la boîte de dialogue
+standard
+remplace les valeurs visibles dans la boîte de dialogue (à condition qu'elles soient modifiables par l'utilisateur) par les valeurs par défaut
+les options que vous y saisissez ont priorité sur les valeurs par défaut appliquées lors de l'installation du programme
+en cas de restauration des valeurs par défaut, aucune demande de confirmation ne s'affichera
+si vous validez la boîte de dialogue immédiatement après, les modifications effectuées seront définitivement perdues
+appliquer
+reprend la valeur modifiée ou sélectionnée sans fermeture de la boîte de dialogue
+réduire/agrandir
+si vous cliquez sur cette icône, vous réduirez la boîte de dialogue à la taille d'un champ de saisie (ou vous restaurerez sa taille d'origine)
+ceci vous permet de sélectionner plus aisément une référence dans une table ou feuille de calcul
+null
+l'icône se transformera automatiquement pour signaler l'agrandissement, il ne vous restera alors plus qu'à cliquer dessus pour restaurer la boîte de dialogue
+la réduction de la boîte de dialogue a lieu automatiquement lorsque vous appuyez sur le bouton de la souris alors qu'elle se trouve sur la feuille et que vous définissez une plage
+dès que vous relâchez le bouton de la souris, la boîte de dialogue retrouve sa taille normale et la référence de la plage définie à l'aide de la souris est mise en évidence par un cadre bleu dans le document
+réduire
+agrandir
+champ d' aperçu
+ce champ permet de contrôler l'aspect de votre document selon les modifications que vous pouvez effectuer à présent
+il s'agit ici d'une représentation approximative
+suivant
+lorsque vous cliquez sur ce bouton, l'autopilote reprend les paramètres actifs et passe à l'étape suivante du travail de modification (ou d'édition)
+arrivé à la dernière étape, il se nommera créer
+précédent
+rétablit les valeurs par défaut pour le cas où elles aient été modifiées
+il s'agit des valeurs qui étaient valables lors du lancement de l'application
+en cas de restauration des valeurs par défaut, aucune demande de confirmation ne s'affichera
+si vous validez la boîte de dialogue immédiatement après, les modifications effectuées seront définitivement perdues
+page verso

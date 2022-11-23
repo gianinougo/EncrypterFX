@@ -1,15 +1,17 @@
 package com.example.encrypterfx.model;
 
+import java.nio.file.Path;
+
 public class FileData {
 
     public String fileName;
-    public String imagePath;
+    public Path path;
 
     private long totalTime;
 
-    public FileData(String fileName, String imagePath, long totalTime) {
+    public FileData(String fileName, Path path, long totalTime) {
         this.fileName = fileName;
-        this.imagePath = imagePath;
+        this.path = path;
         this.totalTime = totalTime;
     }
 
@@ -17,17 +19,11 @@ public class FileData {
         return fileName;
     }
 
-    public void setFileName(String fileName) {
-        this.fileName = fileName;
+
+    public Path getPath() {
+        return path;
     }
 
-    public String getImagePath() {
-        return imagePath;
-    }
-
-    public void setImagePath(String imagePath) {
-        this.imagePath = imagePath;
-    }
 
     public long getTotalTime() {
         return totalTime;
@@ -41,7 +37,7 @@ public class FileData {
     public String toString() {
         return "FileData{" +
                 "fileName='" + fileName + '\'' +
-                ", imagePath='" + imagePath + '\'' +
+                ", imagePath='" + path + '\'' +
                 '}';
     }
 }

@@ -1,0 +1,43 @@
+löschen
+löscht das ausgewählte element oder die elemente nach einer sicherheitsabfrage
+löschen
+löscht das ausgewählte element oder die elemente ohne vorherige sicherheitsabfrage
+metrik
+sie können in den eingabefeldern werte in verschiedenen maßeinheiten eingeben
+vorgabe ist hier zentimeter
+wünschen sie einen abstand von z
+weitere einheiten sind je nach kontext möglich, z
+null
+wenn der wert mit der neuen einheit unrealistische maße annimmt, setzt das programm einen eigenen maximal- bzw
+schließen
+diese schaltfläche schließt den dialog und übernimmt die im dialog vorgenommenen änderungen
+schließen
+schließt den dialog
+standard
+setzt die im dialog sichtbaren werte, soweit sie von ihnen veränderbar sind, wieder auf die vorgegebenen standardwerte zurück
+viele standardwerte sind von ihnen unter extras - optionen veränderbar; was sie dort als optionen eintragen, hat vorrang gegenüber den "werksmäßigen" vorgaben des programms, die während der installation gelten
+vor dem zurücksetzen auf die standardwerte erfolgt keine sicherheitsabfrage
+wenn sie den dialog anschließend bestätigen, sind ihre änderungen unwiederbringlich verloren
+anwenden
+übernimmt die geänderten oder ausgewählten werte, ohne den dialog zu schließen
+verkleinern/vergrößern
+klicken sie auf dieses symbol, um den dialog auf die größe des eingabefelds zu verkleinern oder um den dialog in originalgröße wiederherzustellen
+sie können dann besser den gewünschten bezug in der tabelle markieren
+das symbol wird automatisch zum vergrößern-symbol
+klicken sie auf das vergrößern-symbol, und der dialog wird wiederhergestellt
+das verkleinern des dialogs erfolgt automatisch, wenn sie in der tabelle die maustaste drücken und einen bereich aufziehen
+sobald sie die maustaste loslassen, wird der dialog wieder in ganzer größe gezeigt, und der mit der maus definierte bereichsbezug wird im dokument durch einen blauen rahmen hervorgehoben
+verkleinern
+vergrößern
+vorschaufeld
+in diesem feld sehen sie, wie sich änderungen, die sie jetzt vornehmen können, auf ihr dokument auswirken werden
+dargestellt wird ein stilisiertes beispiel
+weiter
+mit dieser schaltfläche verwendet der autopilot die aktuellen einstellungen des dialogs und springt zum nächsten bearbeitungsschritt weiter
+sind sie beim letzten schritt angelangt, heißt diese schaltfläche fertig stellen
+reset
+setzt geänderte werte wieder auf die standardwerte zurück
+das sind die werte, die beim öffnen der anwendung galten
+vor dem zurücksetzen auf die standardwerte erfolgt keine sicherheitsabfrage
+wenn sie den dialog anschließend bestätigen, sind ihre änderungen unwiederbringlich verloren
+rückseite
