@@ -35,9 +35,6 @@ public class FileData {
 
     @Override
     public String toString() {
-        return "FileData{" +
-                "fileName='" + fileName + '\'' +
-                ", imagePath='" + path + '\'' +
-                '}';
+        return fileName;
     }
 }

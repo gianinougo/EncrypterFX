@@ -80,7 +80,6 @@ public class MainController implements Initializable {
         for (File f: contents) {
             if (!f.isDirectory()){
                 String fileName = f.toPath().getFileName().toString();
-
                 executor.execute(() -> {
                     long t1 = System.currentTimeMillis();
                     try {
@@ -90,7 +89,7 @@ public class MainController implements Initializable {
                     }
                     long t2 = System.currentTimeMillis();
                         Platform.runLater(()-> {
-                            listFiles.getItems().add(new FileData(fileName, f.toPath(), 0));
+                            listFiles.getItems().add(new FileData(fileName, f.toPath(), t2 -t1));
                         });
                 });
             }

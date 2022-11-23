@@ -66,7 +66,7 @@ public class Encrypter {
                             return countLetters(line);
                         }).sum();
                 long sig2 = stream2.filter(line-> line.startsWith("Signature:"))
-                        .mapToInt(line->Integer.parseInt("Signature:", 9)).sum();
+                        .mapToInt(line->Integer.parseInt(line.substring(9))).sum();
                 return sig1==sig2;
             } catch (IOException e){
                 e.printStackTrace();
