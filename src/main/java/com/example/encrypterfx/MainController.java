@@ -67,8 +67,8 @@ public class MainController implements Initializable {
 
         try{
             Path of = Path.of(filePath);
-            if (!(Files.exists(Paths.get(of.getParent() + "/encrypted/")))){
-                Files.createDirectory(Paths.get(of.getParent() + "/encrypted/"));
+            if (!(Files.exists(Paths.get(of.getParent() + "/files/encrypted/")))){
+                Files.createDirectory(Paths.get(of.getParent() + "/files/encrypted/"));
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -147,7 +147,8 @@ public class MainController implements Initializable {
                     if (newValue.getPath().toString().contains("encrypted")){
                         future = executor.submit(encrypter.checkSignature(newValue.getPath()));
                     } else {
-                        future = executor.submit(encrypter.checkSignature(Paths.get(newValue.getPath().getParent().toString() + "/encrypted/")));
+                        future = executor.submit(encrypter.checkSignature(Paths.get(newValue.getPath().getParent().toString()
+                                + "/encrypted/")));
                     }
                 }
 
