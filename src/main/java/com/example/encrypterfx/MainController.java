@@ -29,6 +29,13 @@ import java.util.ResourceBundle;
 import java.util.concurrent.*;
 
 public class MainController implements Initializable {
+
+    /*
+    Menages the main view controller
+    @author Ugo Gianino
+    @version 1.0
+     */
+
     private static String FILE_FOLDER = "/files/";
     @FXML
     private Label lblStatus;

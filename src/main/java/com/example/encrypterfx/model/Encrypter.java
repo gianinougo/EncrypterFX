@@ -1,3 +1,7 @@
+/*
+    @author Ugo Gianino
+ */
+
 package com.example.encrypterfx.model;
 
 import java.io.IOException;
@@ -7,14 +11,26 @@ import java.nio.file.Path;
 import java.util.concurrent.Callable;
 import java.util.stream.Stream;
 
+/*
+ Class to define the encryption.
+ @version 1.0
+ */
+
 public class Encrypter {
 
     int key;
 
+    /*
+    Performs the encryption
+    @param key the encryption key
+     */
     public Encrypter(int key) {
         this.key = key;
     }
 
+    /*
+    Moves the encryption key
+     */
     private String moveChar(String line, int key){
         String result = "";
 
@@ -22,12 +38,12 @@ public class Encrypter {
             result += (char)(line.charAt(i) + key);
 
         }
-
-
-
         return result;
     }
 
+    /*
+    Path the encryption key
+     */
     public void encryption (Path pathName) throws IOException {
 
         try(Stream<String> stream= Files.lines(pathName);
@@ -43,6 +59,9 @@ public class Encrypter {
         }
     }
 
+    /*
+    CountLetters the encryption key
+     */
     private long countLetters(String line) {
 
         long count = 0;
@@ -56,7 +75,9 @@ public class Encrypter {
 
         return count;
     }
-
+    /*
+    Callable method encryption
+     */
     public Callable<Boolean> checkSignature(Path pathName){
         return () -> {
             try (Stream<String> stream= Files.lines(pathName);
