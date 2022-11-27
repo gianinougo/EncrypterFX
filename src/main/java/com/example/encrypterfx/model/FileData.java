@@ -1,33 +1,40 @@
 package com.example.encrypterfx.model;
 
+import java.nio.file.Path;
+
 public class FileData {
 
     public String fileName;
-    public String imagePath;
+    public Path path;
 
+    private long totalTime;
+
+    public FileData(String fileName, Path path, long totalTime) {
+        this.fileName = fileName;
+        this.path = path;
+        this.totalTime = totalTime;
+    }
 
     public String getFileName() {
         return fileName;
     }
 
-    public void setFileName(String fileName) {
-        this.fileName = fileName;
+
+    public Path getPath() {
+        return path;
     }
 
-    public String getImagePath() {
-        return imagePath;
+
+    public long getTotalTime() {
+        return totalTime;
     }
 
-    public void setImagePath(String imagePath) {
-        this.imagePath = imagePath;
+    public void setTotalTime(long totalTime) {
+        this.totalTime = totalTime;
     }
-
 
     @Override
     public String toString() {
-        return "FileData{" +
-                "fileName='" + fileName + '\'' +
-                ", imagePath='" + imagePath + '\'' +
-                '}';
+        return fileName;
     }
 }

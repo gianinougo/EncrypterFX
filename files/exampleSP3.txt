@@ -1,0 +1,48 @@
+el editor de imagemap permite definir las áreas, las urls enlazadas a ellas y también los textos que se muestran al activar las áreas con el puntero del ratón
+hay dos tipos diferentes de imagemaps
+el imagemap de sitio cliente se evalúa en el sistema de destino donde se carga la imagen desde internet, mientras que el imagemap de sitio servidor se evalúa en el sistema que facilita la página html en internet
+en la evaluación del servidor, al pulsar sobre un imagemap se envía al servidor la posición del cursor dentro del gráfico o del marco con coordenadas relativas; en dicho servidor debe haber un programa adicional que reaccione de forma oportuna
+en la más reciente evaluación de clientes, al pulsar sobre un "hot spot" definido en el imagemap, se activa la url enlazada, como si se tratara de un enlace normal de texto
+la url se muestra debajo del puntero del ratón cuando pasa por el imagemap
+las diferentes funciones de los imagemaps demuestran que estos pueden guardarse en formatos muy distintos
+formatos de imagemap
+los imagemaps se diferencian en principio en función de si su evaluación se efectúa en el servidor (p.ej. en el proveedor internet) o en el navegador web del sistema lector
+imagemaps de sitio servidor
+los imagemaps de sitio servidor se muestran para el lector de la página en forma de imágenes o marcos en los que se puede pulsar
+las coordenadas de la posición relativa donde se pulsa con el ratón se envían al servidor; ahí un programa adicional evalúa el siguiente paso a realizar
+existen varios métodos, incompatibles entre sí, para definir este proceso
+los dos más extendidos dos:
+servidor w3c (cern) http (tipo de formato:
+map - cern)
+servidor ncsa http (tipo de formato:
+map - ncsa)
+%productname crea imagemaps para ambos métodos
+seleccione el formato en el listado tipo de archivo del diálogo guardar como
+se crean archivos map separados que usted deberá cargar en el servidor
+en cualquier caso, es preciso consultar a su proveedor o administrador de red acerca del tipo de imagemaps que admite su servidor y del modo de activación del programa de evaluación
+imagemap de sitio cliente
+los imagemaps de sitio cliente no requieren tantas funciones por parte del servidor
+el área que el lector de la página puede seleccionar con el ratón en una imagen o marco se señaliza directamente cuando el ratón pasa por encima; para ello se muestra la url enlazada a este área
+el imagemap se sitúa, por así decirlo, en una capa (layer) previa al plano y contiene información acerca de las áreas sensibles a las referencias
+la desventaja de los imagemaps de sitio de cliente es que los navegadores web antiguos no pueden evaluarlos; un inconveniente que, con el tiempo, se resolverá por sí mismo
+si selecciona el tipo de archivo sip - starview imagemap para guardar un imagemap, este se guarda directamente en un formato que permite su utilización en cada gráfico o marco que esté activado en el documento
+sin embargo, para centrarse sólo en el gráfico o el marco de texto actuales no es preciso guardar de forma adicional el imagemap
+en cuanto el área se ha definido, sólo es preciso pulsar el símbolo asignar
+no es necesario hacer nada más
+los imagemaps de sitio cliente se insertan directamente en los códigos html de la página cuando los guarda en formato html
+algunos navegadores web muy utilizados evalúan los imagemaps de sitio cliente en píxeles tal como se describen en el documento
+en %productname, en principio, las dimensiones se refieren fundamentalmente al tamaño original de la imagen y se amplían durante el hit-test
+para imágenes con indicaciones de tamaño fijas y sin ellas se efectúa una conversión
+en las imágenes con indicación de tamaño relativa se emplea el tamaño original
+algunos navegadores web no logran procesar correctamente las imágenes con indicación porcentual; %productname, en cambio, proporciona resultados excelentes
+intranet
+con intranet se designan las redes locales de empresas que utilizan tcp / ip para las comunicaciones y http como protocolo de transmisión
+comparado con las redes normales, intranet tiene la ventaja de facilitar las transmisiones a través de internet y que el software necesario no es excesivamente caro por el momento
+dirección ip
+se trata de una dirección de 32 bits de internet compuesta por cuatro números comprendidos entre 0 y 255
+los cuatro números están separados por puntos, por ejemplo, 123.234.56.78
+cada usuario tiene su propia dirección de protocolo de internet
+la dirección ip se suele asignar de forma dinámica durante la conexión
+como estas direcciones son difíciles de recordar, en internet el servidor se indica casi siempre con su propio nombre
+un sistema, conocido como servidor de nombres, se encarga de asignar al nombre la dirección ip correcta de la lista que administra
+java

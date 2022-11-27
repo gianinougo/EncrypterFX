@@ -1,0 +1,13 @@
+botones frecuentes
+cancelar
+si cierra el diálogo con el botón cancelar, se cerrará sin guardar las modificaciones efectuadas
+barra desplegable
+algunos símbolos pueden abrir barras de herramientas desplegables al pulsar una vez sobre ellos
+estas barras son menús desplegables en los que podrá elegir diferentes elementos si pulsa sobre ellos
+si pone el cursor en la barra de título, mantiene pulsado el ratón sobre el símbolo y lo arrastra lejos de la barra, el menú desplegable seguirá al puntero del ratón
+en cuanto suelte el botón del ratón la barra desplegable se quedará en la nueva posición
+si lo desea también puede pulsar sobre la barra de título y arrastrarla a otra posición o bien cerrarla pulsando sobre el símbolo cerrar ventana
+campo giratorio
+introduzca en el campo de texto el valor numérico o use las teclas de flechas para seleccionarlo
+a través del teclado puede aumentar o disminuir el valor que se muestra en el campo giratorio; con las teclas (re pág) y (av pág) puede indicar directamente el valor máximo y mínimo
+si se trata de un campo giratorio con valores numéricos, también se puede introducir una unidad de medida, es decir, 1 cm o 5 mm o 12 pt o 2" (para 2 pulgadas)
