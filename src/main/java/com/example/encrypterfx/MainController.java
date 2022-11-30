@@ -1,5 +1,7 @@
 package com.example.encrypterfx;
-
+/*
+Arreglar botones cuando finalice las tareas.
+ */
 import com.example.encrypterfx.model.Encrypter;
 import com.example.encrypterfx.model.FileData;
 import javafx.application.Platform;
@@ -14,8 +16,10 @@ import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.layout.Priority;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 import java.io.File;
 import java.io.IOException;
@@ -186,5 +190,16 @@ public class MainController implements Initializable {
                 };
             }
         };
+
+        service.setDelay(Duration.millis(500));
+        service.setPeriod(Duration.seconds(1));
+        service.setOnSucceeded(e -> {
+            if(service.getValue()){
+                service.cancel();
+                btnSign.setDisable(false);
+                btnCheck.setDisable(false);
+            }
+        });
+
     }
 }
