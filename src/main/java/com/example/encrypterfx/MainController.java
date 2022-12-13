@@ -159,7 +159,7 @@ public class MainController implements Initializable {
                         future = executor.submit(encrypter.checkSignature(newValue.getPath()));
                     } else {
                         future = executor.submit(encrypter.checkSignature(Paths.get(newValue.getPath().getParent().toString()
-                                + "/encrypted/")));
+                                + "/encrypted/" + newValue.fileName)));
                     }
                 }
 
